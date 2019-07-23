@@ -5,7 +5,7 @@
 main()
 {
     /* read a character */
-    int c, space_flag;
+    int c;
     /* while character is not end-of-file, output character just read, then read a new character */
     while ((c = getchar()) != EOF){
 
