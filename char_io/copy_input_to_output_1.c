@@ -8,6 +8,6 @@ main()
     while ((c = getchar()) != EOF){
         if (c != 'a'){
             putchar(c);
-        }   
+        }
     }
 }
