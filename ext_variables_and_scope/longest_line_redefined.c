@@ -1,5 +1,8 @@
 /* Program that reads a set of text lines and prints the longest */
 
+/* NOTE: SINCE ALL VARIABLES DECLARED WITH 'EXTERN' APPEAR AT TOP OF SOURCE FILE,
+THESE DECLARATIONS ARE REDUNDANT */
+
 #include <stdio.h>
 #define MAXLINE 1000 /* maximum input line size */
 
