@@ -19,7 +19,7 @@ main()
         }
         line[len] = '\0';
         printf("%s", line);
-    }
+    }    
     return 0;
 }
 
