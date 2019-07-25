@@ -17,7 +17,7 @@ EX:
 int getline(char s[], int lim);
 int htoi(char s[]);
 
-main()
+int main()
 {
     int len;
     char s[MAXLINE];
@@ -27,6 +27,7 @@ main()
         printf("%d\n", htoi(s));
     }
 
+    return 0;
 }
 
 /* getline: read a line into s, return length */
