@@ -5,7 +5,7 @@
 #include <stdio.h>
 #define SPACES_PER_TAB 3
 
-main()
+int main()
 {
     /* read a character */
     int c, i;
@@ -19,4 +19,5 @@ main()
             putchar(c);
         }
     }
+    return 0;
 }
