@@ -6,9 +6,12 @@ Use a switch.
 
 Write a function for the other direction as well, converting
 escape sequences into the real characters.
+>>>DONE
+
 */
 
 void stoescape(char s[], char t[]);
+void escapetos(char s[], char t[]);
 int getln(char s[], int lim);
 
 #include <stdio.h>
@@ -19,7 +22,8 @@ int main() /* count digits, whitespace, others */
     char t[20];
     while ((len = getln(t, 20)) > 0) {
         char s[20];
-        stoescape(s, t);
+        //stoescape(s, t);
+        escapetos(s, t);
         printf("%s\n", s);
     }
 
@@ -49,6 +53,38 @@ void stoescape(char s[], char t[])
                 s[j++] = t[i];
                 break;
             }
+        }
+
+    }
+
+}
+
+/* copy string t into string s, replacing escape sequences with real characters */
+void escapetos(char s[], char t[])
+{
+    int i, j;
+    for (i = j = 0; t[i] != EOF; i++) {
+        if ( t[i] == '\\' ) {
+            switch (t[i+1]) {
+                case 'n':
+                {
+                    s[j++] = '\n';
+                    i++;
+                    break;
+                }
+                case 't':
+                {
+                    s[j++] = '\t';
+                    i++;
+                    break;
+                }
+                default:
+                {
+                    s[j++] = '\\';
+                }
+            }
+        } else {
+            s[j++] = t[i];
         }
 
     }
