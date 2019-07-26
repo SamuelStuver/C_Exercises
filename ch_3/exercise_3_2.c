@@ -23,6 +23,7 @@ int main() /* count digits, whitespace, others */
     while ((len = getln(t, 20)) > 0) {
         char s[20];
         //stoescape(s, t);
+        printf("%s\n", s);
         escapetos(s, t);
         printf("%s\n", s);
     }
