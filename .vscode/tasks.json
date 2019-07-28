@@ -7,7 +7,7 @@
             "args": [
                 "${file}",
                 "-o",
-                "${fileBasenameNoExtension}.exe"
+                "${fileBasenameNoExtension}.out"
             ],
             "group": {
                 "kind": "build",
