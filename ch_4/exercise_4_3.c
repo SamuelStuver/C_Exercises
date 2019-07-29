@@ -1,5 +1,5 @@
 /***********************
-Extend calculator to add modulus (%) operator (DONE) and provisions for negative numbers (NOT DONE)
+Extend calculator to add modulus (%) operator (DONE) and provisions for negative numbers (DONE)
 ************************/
 #include <stdio.h>
 #include <stdlib.h> /* for atof() */
