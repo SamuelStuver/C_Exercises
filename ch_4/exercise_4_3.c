@@ -104,9 +104,9 @@ int getop(char s[])
         ;
 
     s[1] = '\0';
-    if (c == '-' && isdigit(c_next = getch())) {
+    if (c == '-' && isdigit(c_next = getch())) { /* must be negative sign; set first char to - and put the digit back. set c to digit to trigger later if statement */
         s[0] = '-';
-        c = c_next;
+        c = c_next; 
         ungetch(c_next);
     } else if (c == '-' && !isdigit(c_next)) {
         ungetch(c_next);
