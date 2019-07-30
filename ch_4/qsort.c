@@ -45,7 +45,7 @@ void my_qsort(int v[], int left, int right)
             swap(v, ++last, i);
         }
     }
-    swap(v, left, last);
+    swap(v, left, last);            /* restore partition elem */
     my_qsort(v, left, last-1);
     my_qsort(v, last+1, right);
 }
