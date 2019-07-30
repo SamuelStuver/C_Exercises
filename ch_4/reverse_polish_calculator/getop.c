@@ -39,3 +39,4 @@ int getop(char s[])
         ungetch(c);
     return NUMBER;
 }
+
