@@ -1,5 +1,5 @@
 /*
-Exercise 4-11: use the ideas of printd to write a recursive version of itoa()
+Exercise 4-12: use the ideas of printd to write a recursive version of itoa()
 That is, write a function that converts an integer to a string by calling a 
 recursive routine
  */
