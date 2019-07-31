@@ -1,0 +1,24 @@
+
+***TEST 1: GETLINE***
+
+Hello World
+ - (len: 12, strlen: 12)
+
+This is a test
+ - (len: 15, strlen: 15)
+
+Now is the time for all good men to come to the aid of their country. 
+ - (len: 71, strlen: 71)
+
+"hello"
+ - (len: 8, strlen: 8)
+
+"this\tis\ta\ttest\n" - (len: 21, strlen: 21)
+
+***FUNCTION PASSED***
+
+***TEST 2: ATOI***
+6 - 3 - 2 - 8 - 5 - 1 - 6 - 8 - 0 - 7 - string: 
+int: 0
+
+***FUNCTION PASSED***
