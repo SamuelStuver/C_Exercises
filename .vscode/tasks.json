@@ -3,7 +3,7 @@
         {
             "type": "shell",
             "label": "gcc.exe build active file",
-            "command": "gcc -g -pedantic -Wall -Wextra -Wwrite-strings -Werror",
+            "command": "gcc -g -std=c99 -pedantic -Wall -Wextra -Wwrite-strings -Werror",
             "args": [
                 "${file}",
                 "-o",
